@@ -14,10 +14,12 @@
       %td= comment.name
       %td= comment.email
       %td= comment.content
-      %td= link_to 'Show', comment
-      %td= link_to 'Edit', edit_comment_path(comment)
-      %td= link_to 'Destroy', comment, :method => :delete, :data => { :confirm => 'Are you sure?' }
+      %td= link_to 'Show', [@post, comment]
+      %td= link_to 'Edit', edit_post_comment_path(@post, comment)
+      %td= link_to 'Destroy', post_comment_path(@post, comment), :method => :delete, :data => { :confirm => 'Are you sure?' }
 
 %br
 
-= link_to 'New Comment', new_comment_path
+= link_to 'New Comment', new_post_comment_path
+\|
+= link_to 'Back', posts_path

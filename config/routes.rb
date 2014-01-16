@@ -1,8 +1,8 @@
 NestedResources::Application.routes.draw do
-  root 'comments#index'
-  resources :comments
-
-  resources :posts
+  root 'posts#index'
+  resources :posts do
+    resources :comments
+  end
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
