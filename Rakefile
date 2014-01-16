@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-ExtendedResources::Application.load_tasks
+NestedResources::Application.load_tasks

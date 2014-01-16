@@ -1,4 +1,4 @@
-ExtendedResources::Application.routes.draw do
+NestedResources::Application.routes.draw do
   root 'comments#index'
   resources :comments
 

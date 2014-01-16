@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-ExtendedResources::Application.config.secret_key_base = '9c3bf887b03fb07b8ba0ac354eadd74ddc23340bda199ea7cb51874d57076f6a838d0fb9a15b5dfbe3114c26b0dc6fd74640104daa9db8fccaf5639f61e517dc'
+NestedResources::Application.config.secret_key_base = '9c3bf887b03fb07b8ba0ac354eadd74ddc23340bda199ea7cb51874d57076f6a838d0fb9a15b5dfbe3114c26b0dc6fd74640104daa9db8fccaf5639f61e517dc'
