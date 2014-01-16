@@ -1,5 +1,14 @@
 %p#notice= notice
 
+%p
+  %b Name:
+  = @comment.name
+%p
+  %b Email:
+  = @comment.email
+%p
+  %b Content:
+  = @comment.content
 
 = link_to 'Edit', edit_comment_path(@comment)
 \|
